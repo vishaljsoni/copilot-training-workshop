@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Complete Solution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Task Manager</h1>
+            <p>Stay organized and productive</p>
+        </header>
+
+        <div class="task-input-section">
+            <form id="task-form">
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    placeholder="What needs to be done?" 
+                    required
+                    autocomplete="off"
+                >
+                <button type="submit" class="btn-add">
+                    <span class="plus-icon">+</span> Add Task
+                </button>
+            </form>
+        </div>
+
+        <div class="task-stats">
+            <span id="total-tasks">Total: 0</span>
+            <span id="completed-tasks">Completed: 0</span>
+        </div>
+
+        <ul id="task-list" class="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+
+        <div class="empty-state" id="empty-state">
+            <p>🎉 No tasks yet! Add one above to get started.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
